@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11130f">
+  <meta name="description" content="Jadwal panggung dan lineup Pesta Nada Raya, 15—16 November 2028.">
+  <title>Jadwal &amp; Artis — Pesta Nada Raya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navigasi utama">
+      <div class="container py-2">
+        <a class="navbar-brand brand-mark" href="index.html"><span class="brand-symbol">PNR</span><span>Pesta Nada Raya</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama" aria-controls="menuUtama" aria-expanded="false" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="jadwal.html">Jadwal &amp; Artis</a></li>
+            <li class="nav-item mt-3 mt-lg-0"><button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Mode terang</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten-utama">
+    <section class="schedule-intro section-space" aria-labelledby="judul-halaman">
+      <div class="container">
+        <p class="eyebrow text-lime">15—16 November 2028 · Indonesia Arena</p>
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8"><h1 id="judul-halaman">Pilih momenmu.<br><span class="text-lime">Jangan lewatkan set favorit.</span></h1></div>
+          <div class="col-lg-4"><p class="section-copy">Cari artis, pilih hari, dan susun rencana panggungmu. Waktu tampil adalah jadwal contoh untuk prototipe.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule-section pb-5" aria-labelledby="judul-jadwal">
+      <div class="container">
+        <div class="schedule-toolbar">
+          <div class="day-filters" role="group" aria-label="Filter hari festival">
+            <button class="filter-button is-active" type="button" data-day-filter="all" aria-pressed="true">Semua hari</button>
+            <button class="filter-button" type="button" data-day-filter="2028-11-15" aria-pressed="false">Hari 1 · 15 Nov</button>
+            <button class="filter-button" type="button" data-day-filter="2028-11-16" aria-pressed="false">Hari 2 · 16 Nov</button>
+          </div>
+          <div class="artist-search">
+            <label class="visually-hidden" for="cari-artis">Cari nama artis</label>
+            <input class="form-control" id="cari-artis" type="search" placeholder="Cari artis atau genre..." autocomplete="off">
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 schedule-heading">
+          <div><p class="eyebrow">Lineup &amp; waktu tampil</p><h2 id="judul-jadwal">Panggung festival</h2></div>
+          <p class="results-count mb-0" aria-live="polite"><span data-result-count>3</span> penampil</p>
+        </div>
+
+        <div class="schedule-list" data-schedule-list>
+          <article class="schedule-row" data-artist data-day="2028-11-15" data-stage="panggung-raya">
+            <time class="schedule-time" datetime="2028-11-15T19:00:00+07:00">19.00</time>
+            <div class="schedule-day">15 NOV <span>Panggung Raya</span></div>
+            <div class="schedule-artist"><h3>Rumahsakit</h3><p>Penampil · Indonesia</p></div>
+            <span class="schedule-tag">Hari 1</span>
+          </article>
+          <article class="schedule-row" data-artist data-day="2028-11-15" data-stage="panggung-sore">
+            <time class="schedule-time" datetime="2028-11-15T21:00:00+07:00">21.00</time>
+            <div class="schedule-day">15 NOV <span>Panggung Sore</span></div>
+            <div class="schedule-artist"><h3>Pure Saturday</h3><p>Penampil · Indonesia</p></div>
+            <span class="schedule-tag">Hari 1</span>
+          </article>
+          <article class="schedule-row" data-artist data-day="2028-11-16" data-stage="panggung-raya">
+            <time class="schedule-time" datetime="2028-11-16T19:00:00+07:00">19.00</time>
+            <div class="schedule-day">16 NOV <span>Panggung Raya</span></div>
+            <div class="schedule-artist"><h3>Alkateri</h3><p>Penampil · Indonesia</p></div>
+            <span class="schedule-tag">Penampil utama</span>
+          </article>
+        </div>
+        <p class="empty-state" data-empty-state hidden>Tidak ada artis yang cocok. Coba kata kunci lain.</p>
+      </div>
+    </section>
+
+    <section class="schedule-note section-space" aria-labelledby="judul-catatan">
+      <div class="container note-layout">
+        <div><p class="eyebrow text-lime">Sebelum berangkat</p><h2 id="judul-catatan">Biar fokus ke musiknya.</h2></div>
+        <ul class="note-list">
+          <li>Jadwal ini merupakan contoh dan dapat berubah.</li>
+          <li>Periksa pengumuman resmi sebelum hari acara.</li>
+          <li>Ikuti arahan petugas dan aturan venue.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <a class="footer-brand" href="index.html">PESTA NADA RAYA</a>
+      <p class="mb-0">&copy; <span data-current-year>2026</span> Pesta Nada Raya. Jadwal lineup adalah contoh.</p>
+      <a href="index.html">Kembali ke beranda</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
